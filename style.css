@@ -1,0 +1,156 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+nav {
+  background: #333;
+  padding: 10px 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+nav ul li a.active, nav ul li a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Hero */
+#hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #4caf50;
+  color: white;
+}
+#hero button {
+  background: white;
+  color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#hero button:hover {
+  background: #ddd;
+}
+
+/* Slider */
+#slider {
+  text-align: center;
+  margin: 20px;
+}
+#slider img {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Features */
+#features {
+  padding: 40px 20px;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex: 1 1 200px;
+}
+
+/* About */
+#about {
+  text-align: center;
+  padding: 40px 20px;
+}
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* Skills */
+.skill {
+  margin: 20px;
+}
+.bar {
+  width: 100%;
+  background: #eee;
+  border-radius: 5px;
+}
+.progress {
+  background: #4caf50;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 0; /* animated later */
+  transition: width 1s ease-in-out;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+#contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+#contact input, #contact textarea, #contact button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#contact button {
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+#contact button:hover {
+  background: #45a049;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}
+
+#slider img {
+  width: 600px;      
+  height: auto;      
+  max-width: 100%;   
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
