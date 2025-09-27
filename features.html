@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechX - Features</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>TechX</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="tabs">
+    <h2>Our Features</h2>
+    <div class="tab-buttons">
+      <button onclick="openTab('design')">Sleek Design</button>
+      <button onclick="openTab('performance')">High Performance</button>
+      <button onclick="openTab('security')">Top Security</button>
+    </div>
+
+    <div id="design" class="tab-content">
+      <h3>Sleek Design</h3>
+      <p>Minimalist and stylish, built for modern users.</p>
+    </div>
+
+    <div id="performance" class="tab-content">
+      <h3>High Performance</h3>
+      <p>Fast, efficient, and reliable for everyday use.</p>
+    </div>
+
+    <div id="security" class="tab-content">
+      <h3>Top Security</h3>
+      <p>Advanced encryption and safety features to protect you.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TechX | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
